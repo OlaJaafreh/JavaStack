@@ -16,6 +16,10 @@ public class AlfredTest {
         String alexisTest = alfredBot.respondBeforeAlexis(
                             "Alexis! Play some low-fi beats."
                             );
+
+        String testGuestGreeting1 = alfredBot.guestGreeting("Ola Jaafreh","Yasmeen Al-Ali");
+        String CustomMethod = alfredBot.CustomMethod("Ola Jaafreh");
+
         String alfredTest = alfredBot.respondBeforeAlexis(
             "I can't find my yo-yo. Maybe Alfred will know where it is.");
         String notRelevantTest = alfredBot.respondBeforeAlexis(
@@ -29,6 +33,10 @@ public class AlfredTest {
         System.out.println(testGuestGreeting);
         System.out.println(testDateAnnouncement);
         System.out.println(alexisTest);
+        System.out.println(alfredTest);
+        System.out.println(notRelevantTest);
+        System.out.println(testGuestGreeting1);
+        System.out.println(CustomMethod);
         // System.out.println(alfredTest);
         // System.out.println(notRelevantTest);
     }
