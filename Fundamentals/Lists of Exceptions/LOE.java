@@ -17,6 +17,7 @@ public class LOE{
         }
         }  catch (ClassCastException e){
             System.out.println("String cannot be cast to Integer");
+            // System.out.println(e);
         }
 
 
