@@ -13,8 +13,8 @@ public class Counter {
     }
 	
 	
-	@RequestMapping("/your_server/counter")
-    public String withcounter(HttpSession session) {
+	@RequestMapping("/your_server/counter1")
+    public String withcounter1(HttpSession session) {
 		
 		if (session.getAttribute("count") == null) {
 			session.setAttribute("count", 0);
@@ -24,9 +24,22 @@ public class Counter {
 				session.setAttribute("count", x+1);
 			}
 		
-        return "withCounter.jsp";
+        return "withCounter1.jsp";
     }
 
+	@RequestMapping("/your_server/counter2")
+    public String withcounter2(HttpSession session) {
+		
+		if (session.getAttribute("count") == null) {
+			session.setAttribute("count", 0);
+			}
+			else {
+				Integer x = (Integer) session.getAttribute("count");
+				session.setAttribute("count", x+2);
+			}
+		
+        return "withCounter2.jsp";
+    }
 
 }
 

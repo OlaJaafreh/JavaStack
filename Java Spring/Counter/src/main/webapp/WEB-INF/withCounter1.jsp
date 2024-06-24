@@ -11,7 +11,7 @@
 <body>
 
 	<p>You have visited <a href="/your_server">http://your_server <c:out value="${count}"></c:out> times</a> </p>
-	<p><a href="/your_server/counter">Test another visit?</a> </p>
+	<p><a href="/your_server">Test another visit?</a> </p>
 
 </body>
 </html>
