@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.Container{
+	    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body{
+	width:500px;
+	margin-left: 200px;
+}
