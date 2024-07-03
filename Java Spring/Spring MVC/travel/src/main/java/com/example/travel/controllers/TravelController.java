@@ -47,7 +47,7 @@ public class TravelController {
 	 @GetMapping("/expenses/edit/{id}")
 	    public String edit(@PathVariable("id") Long id, Model model) {
 	        Travel travel = travelService.findTravel(id);
-	        model.addAttribute("expensesEdit", travel);
+	        model.addAttribute("expenseee", travel);
 	        return "EditFront.jsp";
 	    }
 	 
@@ -61,7 +61,7 @@ public class TravelController {
 	 
 	    
 	    @PutMapping("/edit/{id}")
-	    public String update(@Valid @ModelAttribute("expensesEdit") Travel travel, BindingResult result, Model model) {
+	    public String update(@Valid @ModelAttribute("expensesEdit") Travel travel, BindingResult result) {
 	        if (result.hasErrors()) {
 //	            model.addAttribute("expensesEdit", travel);
 	            return "EditFront.jsp";

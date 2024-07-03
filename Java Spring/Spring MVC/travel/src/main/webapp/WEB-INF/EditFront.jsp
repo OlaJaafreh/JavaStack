@@ -31,24 +31,24 @@
 	 <input type="hidden" name="_method" value="put">
     <p>
         <form:label class="form-label" path="name">Travel Name</form:label>
-        <form:input class="form-control" id="formControlInput" type="text" path="name" value="${ expenesEdit.name}"/>
+        <form:input class="form-control" id="formControlInput" type="text" path="name" value="${ expenseee.name}"/>
         <form:errors path="name"/>
         
         
     </p>
     <p>
         <form:label class="form-label"  path="vendor">Vendor</form:label>
-        <form:input class="form-control" id="formControlInput"  path="vendor"  value="${ expenesEdit.vendor}"/>
+        <form:input class="form-control" id="formControlInput"  path="vendor"  value="${ expenseee.vendor}"/>
         <form:errors path="vendor"/>
     </p>
     <p>
         <form:label class="form-label"  path="amount">Amount</form:label>
-        <form:input class="form-control" id="formControlInput"  type="number" path="amount"  value="${ expenesEdit.amount}"/>
+        <form:input class="form-control" id="formControlInput"  type="number" path="amount"  value="${ expenseee.amount}"/>
         <form:errors path="amount"/>
     </p>
     <p>
         <form:label class="form-label"  path="description">Description</form:label>
-        <form:textarea class="form-control" id="formControlInput"  path="description"  value="${ expenesEdit.description}"/>
+        <form:textarea class="form-control" id="formControlInput"  path="description"  value="${ expenseee.description}"/>
         <form:errors path="description"/>
     </p>    
     <input type="submit" value="Submit"/>
