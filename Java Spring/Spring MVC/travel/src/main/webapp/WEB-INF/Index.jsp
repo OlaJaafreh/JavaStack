@@ -27,16 +27,23 @@
       <th scope="col">Expense</th>
       <th scope="col">Vendor</th>
       <th scope="col">Amount</th>
+      <th scope="col">Action</th>
+      <th ></th>
 
     </tr>
   </thead>
   <tbody>
    <c:forEach var="expense" items="${expenses}">
        <tr>
-      <th scope="row">1</th>
-      <td><c:out value="${expense.name}"></c:out></td>
+      <td><c:out value="${expense.id}"></c:out></td>
+      <td><a href="expenses/det/${ expense.id}"><c:out value="${expense.name}"></c:out></a></td>
       <td><c:out value="${expense.vendor}"></c:out></td>
       <td><c:out value="${expense.amount}"></c:out></td>
+      <td><a href="expenses/edit/${ expense.id}">edit</a></td>
+      <form:form action="/del/${ expense.id}" method="post">
+      <input type="hidden" name="_method" value="delete">
+      <td><input type="submit" value="Delete"/></td>
+      </form:form>
     </tr>
 
     </c:forEach>

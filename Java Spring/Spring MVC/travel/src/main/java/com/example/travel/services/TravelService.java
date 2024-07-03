@@ -28,6 +28,14 @@ public class TravelService {
     public Travel createTravel(Travel b) {
         return travelRepo.save(b);
     }
+    
+    public void deleteTravel(Long id) {
+    	travelRepo.deleteById(id);
+    }
+    
+    public Travel updateTravel(Travel b) {
+        return travelRepo.save(b);
+    }
     // retrieves a Travel
     public Travel findTravel(Long id) {
         Optional<Travel> optionalTravel = travelRepo.findById(id);
