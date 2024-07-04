@@ -18,6 +18,8 @@
 </head>
 <body>
 
+<h1>${dojo.dojoName}</h1>
+
 <table class="table table-hover">
   <thead>
     <tr>
@@ -28,7 +30,7 @@
     </tr>
   </thead>
   <tbody>
-   <c:forEach var="ninja" items="${Ninjas}">
+   <c:forEach var="ninja" items="${ninjas}">
        <tr>
       <td><c:out value="${ninja.ninjaFirstName}"></c:out></td>
       <td><c:out value="${ninja.ninjaLastName}"></c:out></td>

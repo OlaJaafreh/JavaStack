@@ -13,7 +13,7 @@
 
 <h1>New Dojo</h1>
 
-<form:form action="/dojo/${dojo.id}" method="post" modelAttribute="dojo">
+<form:form action="/dojos/new" method="post" modelAttribute="dojo">
  
     <div>
         <form:label path="dojoName">Name</form:label>
